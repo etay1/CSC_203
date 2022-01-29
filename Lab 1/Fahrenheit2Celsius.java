@@ -4,7 +4,7 @@ public class Exercise2{
         Scanner input = new Scanner(System.in);
         System.out.println("Enter degrees in Celsius");
         double c = input.nextDouble();
-        double f = (c * (9/5)) + 32;
+        double f = 1.8 * c + 32;
         System.out.println("Fahrenheit conversion is: " + f);
     }
 }
