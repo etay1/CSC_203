@@ -1,0 +1,197 @@
+import java.util.Scanner;
+public class Exercise1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter weight (lbs): ");
+        double lbs = input.nextDouble();
+        System.out.println("Enter height (in): ");
+        double inch = input.nextDouble();
+        double kilo = lbs * (.45359237);
+        double meter = inch * (.0254);
+        double bmi = BMI(kilo,meter);
+        System.out.println("Your BMI is: " + bmi);
+    }
+    public static double BMI (double w, double h) {
+        double x;
+        x = (w / Math.pow(h,2));
+        return x;
+    }
+}
+
+
+
+/*
+Sample Exercise 1: 
+Enter weight (lbs): 
+150
+Enter height (in): 
+68
+Your BMI is: 22.807187920820482
+*/
+
+import java.util.Scanner;
+public class Exercise2 {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int user = input.nextInt();
+
+        if (user % 5 == 0 && user % 2 == 0) {
+            System.out.println("HiFive \n HiEven");
+        } else if (user % 5 == 0)
+            System.out.println("HiFive");
+        else if (user % 2 == 0)
+            System.out.println("HiEven");
+        else
+            System.out.println("Neither");
+
+
+    }
+
+}
+
+
+
+/*
+Sample Exercise 2: 
+50
+HiFive 
+ HiEven
+*/
+
+import java.util.Scanner;
+public class Exercise3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a year: ");
+        int year = input.nextInt();
+        boolean leap = false;
+
+        if (year % 4 == 0) {
+            leap = true;
+        } else if (year % 4 == 0 && year % 400 == 0) {
+            leap = true;
+        } else if (year % 100 == 0) {
+            leap = false;
+        }
+
+        if (leap)
+            System.out.println(year + " is a leap year");
+        else
+            System.out.println(year + " is a common year");
+
+    }
+
+}/*
+
+
+/*
+Sample Exercise 3: 
+Enter a year: 
+2004
+2004 is a leap year
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+public class Exercise4 {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int a = (int) (Math.random() * 10);
+    int b = (int) (Math.random() * 10);
+    boolean add = true;
+    boolean sub = true;
+    boolean mult = true;
+
+    System.out.println("The numbers are a = " + a + " and b = " + b);
+    System.out.println("a + b = ?" );
+    int n = input.nextInt();
+    if (a + b != n)
+        add = false;
+
+    System.out.println("a - b = ? ");
+    int n2 = input.nextInt();
+    if (a - b != n2)
+        sub = false;
+
+    System.out.println("a * b = ?");
+    int n1 = input.nextInt();
+    if (a * b != n1)
+        mult = false;
+
+    System.out.println("Addition answer: " + add);
+    System.out.println("Substitution answer: " + sub);
+    System.out.println("Multiplication answer: " + mult);
+
+    }
+}
+
+
+/*
+Sample Exercise 4: 
+The numbers are a = 9 and b = 1
+a + b = ?
+10
+a - b = ? 
+8
+a * b = ?
+9
+Addition answer: true
+Substitution answer: true
+Multiplication answer: true
+*/
+
+
+
+
+
+
+import java.util.Scanner;
+public class Exercise5 {
+    public static void main (String [] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.println ("Enter a hex number");
+        String hex = input.next ();
+        int d = hex2Dec (hex.toUpperCase ());
+        System.out.println ("The decimal value is: " + d);
+    }
+
+    public static int hex2Dec (String h) {
+        int dec = 0;
+        for (int i = 0; i < h.length (); i++) {
+            char hexChar = h.charAt (i);
+            int digit = hexChar2Dec (hexChar);
+            dec = dec * 16 + digit;
+        }
+        return dec;
+    }
+
+    public static int hexChar2Dec (char c) {
+        if (c >= 'A' && c <= 'F')
+            return 10 + c - 'A';
+        else
+            return c - '0';
+    }
+}
+
+
+
+/*
+Sample Exercise 5: 
+Enter a hex number
+16
+The decimal value is: 22
+*/
