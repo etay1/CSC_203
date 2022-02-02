@@ -18,8 +18,6 @@ public class Exercise1 {
     }
 }
 
-
-
 /*
 Sample Exercise 1: 
 Enter weight (lbs): 
@@ -28,6 +26,8 @@ Enter height (in):
 68
 Your BMI is: 22.807187920820482
 */
+
+-----------------------------------------------------------------------------------------------------------------------
 
 import java.util.Scanner;
 public class Exercise2 {
@@ -45,12 +45,8 @@ public class Exercise2 {
         else
             System.out.println("Neither");
 
-
     }
-
 }
-
-
 
 /*
 Sample Exercise 2: 
@@ -58,6 +54,7 @@ Sample Exercise 2:
 HiFive 
  HiEven
 */
+----------------------------------------------------------------------------------------------------------------------------
 
 import java.util.Scanner;
 public class Exercise3 {
@@ -82,7 +79,7 @@ public class Exercise3 {
 
     }
 
-}/*
+}
 
 
 /*
@@ -92,19 +89,7 @@ Enter a year:
 2004 is a leap year
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+------------------------------------------------------------------------------------------------------------------
 
 import java.util.Scanner;
 public class Exercise4 {
@@ -154,10 +139,7 @@ Substitution answer: true
 Multiplication answer: true
 */
 
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------
 
 import java.util.Scanner;
 public class Exercise5 {
@@ -186,7 +168,6 @@ public class Exercise5 {
             return c - '0';
     }
 }
-
 
 
 /*
