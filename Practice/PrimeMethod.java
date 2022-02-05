@@ -6,7 +6,8 @@
         } while(j <= num / 2) {
             if (num % j != 0) {
              //empty statement to pass true
-            } else { check = false;
+            } else { 
+             check = false;
             }
             j++;
         }
