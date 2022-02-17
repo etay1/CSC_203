@@ -31,7 +31,9 @@ class Rectangle {
 
 }
 
+/*
+Sample Exercise 1: 
 
-
-
-
+Width: 4.0 | Height: 40.0 | Area: 160.0 | Perimeter: 88.0
+Width: 3.5 | Height: 35.9 | Area: 125.64999999999999 | Perimeter: 78.8
+*/
