@@ -54,7 +54,7 @@ public class test_StopWatch {
         for (int i = 0; i < n; i++) //loop size based on user input
             sw.stop();//ends stop watch
 
-        System.out.print("The loop took " + sw.getElapsedTime() + " nanoseconds to complete."); //get method
+        System.out.print("The loop took " + sw.getElapsedTime() + " milliseconds to complete."); //get method
     }
 }
 
